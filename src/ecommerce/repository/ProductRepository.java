@@ -1,18 +1,20 @@
 package ecommerce.repository;
 
+import ecommerce.model.Product;
+
 public interface ProductRepository {
 	
     // CRUD do product
-    public void findByName();
+    public void findByName(String name);
 
     public void listAll();
    
-    public void listByCategory();
+    public void listByCategory(String categoty);
 
-    public void cadastrar();
+    public void cadastrar(Product product);
 
-    public void atualizar();
+    public void atualizar(Product product);
 
-    public void deletar();
+    public void deletar(Product product);
 
 }
