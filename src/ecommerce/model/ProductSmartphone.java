@@ -6,7 +6,7 @@ public class ProductSmartphone extends Product {
 	private String brand;
 	
 	public ProductSmartphone(String name, float preço, int stock, String description, String category, float price, String oS, String brand) {
-		super(name, stock, description, category, price);
+		super(name, stock, description, "Smartphone", price);
 		this.oS = oS;
 		this.brand = brand;
 	}
